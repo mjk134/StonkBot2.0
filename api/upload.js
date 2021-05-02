@@ -1,4 +1,5 @@
 module.exports = (req, res) => {
+  res.send(req.toString())
 	console.log("** Uploaded file ", req.file.filename);
   res.json({'message': 'File uploaded successfully',
     'result': true,
